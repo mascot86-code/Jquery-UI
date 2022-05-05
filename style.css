@@ -100,3 +100,45 @@ h2 {
     height: 50px;
     border-radius: 4px;
 }
+
+.articles {
+    margin-top: 20px;
+}
+
+.article {
+    display: none;
+    opacity: 0;
+    overflow: hidden;
+}
+
+.active {
+    opacity: 1;
+    display: block;
+}
+
+.active h3 {
+    color: red;
+}
+
+.next {
+    border: none;
+    width: 120px;
+    height: 50px;
+    border-radius: 4px;
+}
+
+.prev {
+    border: none;
+    width: 120px;
+    height: 50px;
+    border-radius: 4px;
+}
+
+.article_text {
+    color: darkgrey;
+}
+
+.symbols{
+    display: block;
+    margin-bottom: 10px;
+}

@@ -52,4 +52,20 @@ $('document').ready(function () {
         $('.notice').fadeOut(1000, showText('Cообщение автоматически скрыто, спасибо!'))
         $('.hide_cookie').fadeOut(300)
     })
+
+    // Articles
+
+    $('.next').on('click', function () {
+        $('.articles').find('.active').next().addClass('active')
+        $('.articles').find('.active').prev().removeClass('active')
+    })
+
+    $('.prev').on('click', function () {
+        $('.articles').find('.active').prev().addClass('active')
+        $('.articles').find('.active').next().removeClass('active')
+    })
+
+    $('.article_text').each(function (index, item) {
+        $('.symbols').eq(index).text(`Сharacters per line ${item.innerText.length}`)
+    })
 })
