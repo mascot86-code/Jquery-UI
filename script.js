@@ -41,4 +41,6 @@ $('document').ready(function () {
             }
         })
     })
+
+    $('.col').fadeIn(2000)
 })
