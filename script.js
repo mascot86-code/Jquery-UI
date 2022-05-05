@@ -42,5 +42,14 @@ $('document').ready(function () {
         })
     })
 
-    $('.col').fadeIn(2000)
+    // Cookie
+
+    function showText(text) {
+        $('.notice').text(text)
+    }
+
+    $('.hide_cookie').on('click', function () {
+        $('.notice').fadeOut(1000, showText('Cообщение автоматически скрыто, спасибо!'))
+        $('.hide_cookie').fadeOut(300)
+    })
 })
