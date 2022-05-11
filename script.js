@@ -68,4 +68,22 @@ $('document').ready(function () {
     $('.article_text').each(function (index, item) {
         $('.symbols').eq(index).text(`Сharacters per line ${item.innerText.length}`)
     })
+
+    // Input value. Styles without CSS
+
+
+    $('form').css({ 'margin-top': 20 })
+
+    $('input[type="submit"]').css({
+        'width': 120,
+    })
+
+    $('input[type="text"]').on('change', function () {
+        let value = $(this).val()
+        let length = value.length
+
+        $('input[type="submit"]').on('click', function () {
+            alert(value + ' ' + length + ' сharacters')
+        })
+    })
 })
