@@ -86,4 +86,14 @@ $('document').ready(function () {
             alert(value + ' ' + length + ' сharacters')
         })
     })
+
+    let list = $('.list_items')
+    let ul = `<ol>
+    <li>List 1</li>
+    <li>List 2</li>
+    <li>List 3</li>
+    <li>List 4</li>
+    </ol>`
+
+    list.append(ul).css({'margin-top': 20});
 })
